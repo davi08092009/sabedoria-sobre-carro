@@ -1,0 +1,25 @@
+// Função do Contador de Curtidas
+let likes = 0;
+const likeBtn = document.getElementById('likeBtn');
+const likeCount = document.getElementById('likeCount');
+
+likeBtn.addEventListener('click', () => {
+    likes++;
+    likeCount.textContent = likes;
+});
+
+// Função de Busca Simples
+const searchBtn = document.getElementById('searchBtn');
+const carInput = document.getElementById('carInput');
+const resultText = document.getElementById('resultText');
+
+searchBtn.addEventListener('click', () => {
+    const carName = carInput.value.trim();
+    if (carName !== '') {
+        resultText.textContent = `Buscando informações sobre: "${carName}"...`;
+        resultText.style.color = '#2ed573';
+    } else {
+        resultText.textContent = 'Por favor, digite o nome de um carro.';
+        resultText.style.color = '#ff4757';
+    }
+});
