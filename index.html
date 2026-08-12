@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Auto - Tudo Sobre Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏎️ Portal Auto</h1>
+        <p>Sua enciclopédia sobre o mundo automotivo</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Pesquisar Modelo</h2>
+            <input type="text" id="carInput" placeholder="Digite o nome de um carro...">
+            <button id="searchBtn">Buscar</button>
+            <p id="resultText"></p>
+        </section>
+
+        <section class="card">
+            <h2>Carro do Dia</h2>
+            <div class="car-info">
+                <h3>Porsche 911 GT3</h3>
+                <p><strong>Motor:</strong> 4.0 Boxter de 6 cilindros</p>
+                <p><strong>Potência:</strong> 510 cv</p>
+                <p><strong>0 a 100 km/h:</strong> 3,4 segundos</p>
+            </div>
+            <button id="likeBtn">❤️ Curtir (<span id="likeCount">0</span>)</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
